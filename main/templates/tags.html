@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Tags | AurKoiSawal{% endblock %}
+
+{% block activeTags %}active{% endblock %}
+{% block content %}
+    <!-- Question List -->
+    <div class="container py-5">
+        <div class="row">
+            {% for tag in tags %}
+            <div class="col-2">
+                <div class="card" style ="border-radius: 0px 25px 0px 25px; background-color:#202124; margin-top:20px">
+                    <div class="card-body">
+                        <p class="card-text" style="color:white; font-weight:bold; font-size:20px"><a href="/tag/{{tag.name|slugify}}">{{tag.name}} 
+                            <span class="badge badge-info" >{{tag.count}}</span></a></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
