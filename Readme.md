@@ -37,7 +37,7 @@ Clone this repository
 
 1. Clone this project using
 ````
-$ git clone https://github.com/Yawan-1/StackOverFlow--Clone
+$ git clone https://github.com/meghana-RABBA/django_aurkoisawal_app.git
 ````
 2. Install the Django Framework
 
